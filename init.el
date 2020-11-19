@@ -22,3 +22,6 @@
 (setq org-log-done t)
 
 (tool-bar-mode 0)
+
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'none)
