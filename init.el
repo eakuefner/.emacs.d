@@ -12,6 +12,7 @@
 (load-theme 'base16-default-light t)
 
 (global-display-line-numbers-mode)
+(column-number-mode)
 
 (add-to-list 'default-frame-alist
              '(font . "Anonymous Pro:pixelsize=16:antialias=true:autohint=true"))
