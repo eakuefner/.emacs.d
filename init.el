@@ -14,8 +14,12 @@
 (global-display-line-numbers-mode)
 (column-number-mode)
 
-(add-to-list 'default-frame-alist
-             '(font . "Anonymous Pro:pixelsize=16:antialias=true:autohint=true"))
+(cond
+ ((string= system-name "DESKTOP")
+  (add-to-list 'default-frame-alist
+	       '(font . "Anonymous Pro:pixelsize=32:antialias=true:autohint=true")))
+ (t (add-to-list 'default-frame-alist
+	         '(font . "Anonymous Pro:pixelsize=16:antialias=true:autohint=true"))))
 
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
