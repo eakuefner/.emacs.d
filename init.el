@@ -30,3 +30,5 @@
 
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'none)
+
+(add-hook 'org-mode-hook 'visual-line-mode)
