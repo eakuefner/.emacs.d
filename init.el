@@ -25,6 +25,7 @@
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
+(setq org-adapt-indentation 'headline-data)
 
 (tool-bar-mode 0)
 
