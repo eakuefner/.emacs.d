@@ -8,8 +8,7 @@
 (require 'evil)
 (evil-mode 1)
 
-(setq base16-theme-256-color-source "base16-shell")
-(load-theme 'base16-default-light t)
+(load-theme 'leuven t)
 
 (global-display-line-numbers-mode)
 (column-number-mode)
@@ -19,7 +18,7 @@
   (add-to-list 'default-frame-alist
 	       '(font . "Anonymous Pro:pixelsize=32:antialias=true:autohint=true")))
  (t (add-to-list 'default-frame-alist
-	         '(font . "Anonymous Pro:pixelsize=16:antialias=true:autohint=true"))))
+	         '(font . "Anonymous Pro:pixelsize=18:antialias=true:autohint=true"))))
 
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
