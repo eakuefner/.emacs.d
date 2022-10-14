@@ -1,0 +1,3 @@
+[submodule "org-media-note"]
+	path = third_party/org-media-note
+	url = git@github.com:eakuefner/org-media-note.git
