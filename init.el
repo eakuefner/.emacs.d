@@ -31,4 +31,9 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'none)
 
-(add-hook 'org-mode-hook 'visual-line-mode)
+(defun my-org-hook ()
+  (setq fill-column 80)
+  (visual-line-mode)
+  (auto-fill-mode))
+
+(add-hook 'org-mode-hook #'my-org-hook)
