@@ -48,3 +48,5 @@
 	 ("C-c n i" . org-roam-node-insert))
   :config
   (org-roam-db-autosync-enable))
+
+(add-hook 'write-file-hooks 'delete-trailing-whitespace)
