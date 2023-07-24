@@ -1,6 +1,8 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
+(eval-when-compile (require 'use-package))
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
@@ -38,3 +40,11 @@
   (auto-fill-mode))
 
 (add-hook 'org-mode-hook #'my-org-hook)
+
+(use-package org-roam
+  :ensure t
+  :bind (("C-c n f" . org-roam-node-find)
+	 ("C-c n l" . org-roam-buffer-toggle)
+	 ("C-c n i" . org-roam-node-insert))
+  :config
+  (org-roam-db-autosync-enable))
