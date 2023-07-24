@@ -16,7 +16,7 @@
 (cond
  ((string= system-name "DESKTOP")
   (add-to-list 'default-frame-alist
-	       '(font . "Anonymous Pro:pixelsize=32:antialias=true:autohint=true")))
+	       '(font . "Anonymous Pro:pixelsize=24:antialias=true:autohint=true")))
  (t (add-to-list 'default-frame-alist
 	         '(font . "Anonymous Pro:pixelsize=18:antialias=true:autohint=true"))))
 
