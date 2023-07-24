@@ -21,7 +21,7 @@
   (add-to-list 'default-frame-alist
 	       '(font . "Anonymous Pro:pixelsize=24:antialias=true:autohint=true")))
  (t (add-to-list 'default-frame-alist
-	         '(font . "Anonymous Pro:pixelsize=18:antialias=true:autohint=true"))))
+	         '(font . "Anonymous Pro:pixelsize=16:antialias=true:autohint=true"))))
 
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
