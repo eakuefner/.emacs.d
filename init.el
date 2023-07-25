@@ -43,10 +43,16 @@
 
 (use-package org-roam
   :ensure t
+  :custom
+  (org-roam-dailies-capture-templates
+    '(("d" "default" entry "* %<%H:%M>\n%?"
+       :if-new (file+head "%<%Y-%m-%d>.org" "#+title: %<%Y-%m-%d>\n"))))
   :bind (("C-c n f" . org-roam-node-find)
 	 ("C-c n l" . org-roam-buffer-toggle)
 	 ("C-c n i" . org-roam-node-insert))
+  :bind-keymap ("C-c n d" . org-roam-dailies-map)
   :config
-  (org-roam-db-autosync-enable))
+  (org-roam-db-autosync-enable)
+  (require 'org-roam-dailies))
 
 (add-hook 'write-file-hooks 'delete-trailing-whitespace)
