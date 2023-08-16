@@ -45,7 +45,8 @@
   :ensure t
   :custom
   (org-roam-dailies-capture-templates
-    '(("d" "default" entry "* %<%H:%M>\n\n%?\n"
+    '(("d" "default" entry "* %<%H:%M>\n\n%?"
+       :empty-lines 1
        :if-new (file+head "%<%Y-%m-%d>.org" "#+title: %<%Y-%m-%d>\n"))))
   :bind (("C-c n f" . org-roam-node-find)
 	 ("C-c n l" . org-roam-buffer-toggle)
