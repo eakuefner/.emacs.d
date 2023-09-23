@@ -1,3 +1,6 @@
+(if (eq system-type 'windows-nt)
+    (set-language-environment 'UTF-8))
+
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
