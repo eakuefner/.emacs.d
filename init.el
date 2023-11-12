@@ -60,3 +60,9 @@
   (require 'org-roam-dailies))
 
 (add-hook 'write-file-hooks 'delete-trailing-whitespace)
+
+(defun eakuefner/org-roam-status ()
+  (interactive)
+  (magit-status "~/org-roam"))
+
+(define-key global-map "\M-o" #'eakuefner/org-roam-status)
