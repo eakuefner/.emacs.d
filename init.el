@@ -61,6 +61,10 @@
 
 (add-hook 'write-file-hooks 'delete-trailing-whitespace)
 
+(use-package rg
+  :config
+  (rg-enable-default-bindings))
+
 (defun eakuefner/org-roam-status ()
   (interactive)
   (magit-status "~/org-roam"))
