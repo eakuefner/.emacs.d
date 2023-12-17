@@ -22,7 +22,7 @@
 (cond
  ((string= system-name "GAMER")
   (add-to-list 'default-frame-alist
-	       '(font . "Anonymous Pro:pixelsize=24:antialias=true:autohint=true")))
+	       '(font . "IBM Plex Mono Text:pixelsize=24:antialias=true:autohint=true")))
  (t (add-to-list 'default-frame-alist
 	         '(font . "Anonymous Pro:pixelsize=16:antialias=true:autohint=true"))))
 
