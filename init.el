@@ -70,3 +70,13 @@
   (magit-status "~/org-roam"))
 
 (define-key global-map "\M-o" #'eakuefner/org-roam-status)
+
+(defun eakuefner/line-number-toggle ()
+  (interactive)
+  (cond
+   ((eq display-line-numbers 't)
+      (setq display-line-numbers 'relative))
+   ((eq display-line-numbers 'relative)
+      (setq display-line-numbers 't))))
+
+(define-key global-map "\M-n" #'eakuefner/line-number-toggle)
