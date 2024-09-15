@@ -4,6 +4,8 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
+(setq inhibit-startup-message t)
+
 (eval-when-compile (require 'use-package))
 
 (require 'package)
