@@ -86,3 +86,7 @@
 (use-package citar
   :custom
   (citar-bibliography (concat (getenv "DATA_DIR") "\\references\\refs.bib")))
+
+(use-package vertico
+  :init
+  (vertico-mode))
