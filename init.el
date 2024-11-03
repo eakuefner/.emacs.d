@@ -82,3 +82,7 @@
       (setq display-line-numbers 't))))
 
 (define-key global-map "\M-n" #'eakuefner/line-number-toggle)
+
+(use-package citar
+  :custom
+  (citar-bibliography (concat (getenv "DATA_DIR") "\\references\\refs.bib")))
