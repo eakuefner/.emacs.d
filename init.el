@@ -25,8 +25,11 @@
  ((string= system-name "GAMER")
   (add-to-list 'default-frame-alist
 	       '(font . "IBM Plex Mono Text:pixelsize=24:antialias=true:autohint=true")))
+ ((string= system-name "a.localdomain")
+  (add-to-list 'default-frame-alist
+	       '(font . "IBM Plex Mono Text:pixelsize=15:antialias=true:autohint=true")))
  (t (add-to-list 'default-frame-alist
-	         '(font . "Anonymous Pro:pixelsize=16:antialias=true:autohint=true"))))
+	         '(font . "IBM Plex Mono Text:pixelsize=16:antialias=true:autohint=true"))))
 
 (require 'org)
 (define-key global-map "\C-cl" 'org-store-link)
