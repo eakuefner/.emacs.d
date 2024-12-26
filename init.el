@@ -85,3 +85,9 @@
       (setq display-line-numbers 't))))
 
 (define-key global-map "\M-n" #'eakuefner/line-number-toggle)
+
+(defun jstor-insert-bibtex ()
+  (interactive)
+  (doi-insert-bibtex
+   (concat "10.2307/"
+	   (read-from-minibuffer "JSTOR id: "))))
