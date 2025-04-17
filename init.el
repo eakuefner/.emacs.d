@@ -25,7 +25,7 @@
  ((string= system-name "GAMER")
   (add-to-list 'default-frame-alist
 	       '(font . "IBM Plex Mono Text:pixelsize=24:antialias=true:autohint=true")))
- ((string= system-name "a.localdomain")
+ ((string= system-name "a.local")
   (add-to-list 'default-frame-alist
 	       '(font . "IBM Plex Mono Text:pixelsize=15:antialias=true:autohint=true")))
  (t (add-to-list 'default-frame-alist
